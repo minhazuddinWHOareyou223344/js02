@@ -1,0 +1,261 @@
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+   
+}
+.contaniner{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+
+}
+body{
+   font-family:'Raleway', sans-serif ;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #444444;
+    color: white;
+    padding: 0 18px;
+    
+}
+header.eng{
+    width: 50%;
+  
+
+}
+header .wit{
+    width: 50%;
+  
+
+}
+header .wit ul {
+    text-align: right;
+   
+}
+header ul li{
+    display: inline-block;
+    border-left: 1px solid white   ;
+}
+header ul li a{
+    display: block;
+    padding: 0 18px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+   
+}
+#nav .logo{
+    width: 20%;
+    margin: 35px;
+}
+#nav.manu{
+    width: 60%;
+}
+#nav .item{
+width: 20%;
+}
+#nav ul li{
+    display: inline-block;
+}
+#nav .item ul {
+    text-align: right;
+}
+#nav .manu ul {
+    text-align: center;
+}
+#nav ul li a{
+    display: block;
+    padding: 41px 18px;
+    font-weight: 500;
+    color: #222;
+    font-size: 16px;
+}
+#nav ul li  :hover{
+    color: red;
+}
+#banner{
+    background-image: url(./imgs/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+  
+}
+#banner .text{
+    width: 50%;
+}
+#banner h2{
+    font-weight: 800;
+    font-size: 50px;
+    color: red;
+    margin: 0 0;
+}
+#banner h3{
+   
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+  margin: 0 0;
+}
+#banner p{
+    font-size: 14px;
+    color:white;
+   text-align: justify;
+  margin: 30px 0;
+    
+   
+}
+#banner a{
+    padding: 16px 20px;
+    display: inline-block;
+ border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+#banner .row{
+height: 600px;
+}
+#banner .text a:hover{
+    background-color: red;
+}
+#nav  .togglerbtn   {
+   border: 2px solid rgb(37, 13, 13);
+
+  color: rgb(15, 95, 165);
+   text-align: center;
+   transition: 500ms;
+}
+.sideber{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+ transform: scaleY(0);
+ transform-origin: top;
+   transition: .500ms;
+   position: absolute;
+   z-index: 2;
+}
+.sideber  ul li{
+    text-align: center;
+   
+}
+.sideber  ul li a{
+    color: white;
+    padding: 16px 20px;
+    display: inline-block;
+ 
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+
+
+}
+.activesidebar{
+    transform: scaleY(1);
+    transition: 500ms;
+}
+#banner .text span{
+font-size: 24px;
+padding: 10px 15px;
+color: aliceblue;
+font-weight: 300;
+position: absolute;
+border: 1px solid white;
+bottom: 50px;
+right: 650px;
+
+}
+#banner .text .hoh{
+   bottom: 50px;
+   right: 550px;
+   border: 1px solid white;
+   background-color: brown;
+}
+#free{
+   
+   background-color:#f1f1f1;
+}
+#free .frees  h4{
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+   
+   
+}
+#free .frees span{
+    display: inline-block;
+}
+#free .frees{
+    width: 33%;
+   padding: 0 20px;
+  
+}
+#free .support{
+    width: 33%;
+    border-left: 1px solid red;
+    padding: 0 20px;
+}
+#free .support h4{
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+}
+#free .support span{
+    display: inline-block;
+}
+#free .back{
+    width: 33%;
+    border-left: 1px solid red;
+    padding: 0 20px;
+}
+#free.back span{
+    display: inline-block;
+}
+#free .back h4{
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+}
+#new .news{
+    width: 33.33%;
+}
+#new{
+    margin: 100px;
+}
+.navvv{
+    position: fixed;
+    z-index: 5;
+    background-color: #f1f1f1a5;
+   width: 100%;
+    transform: translateY(-150%);
+   animation-name: navx;
+   animation-direction: 1s;
+   animation-timing-function: ease-out;
+   animation-fill-mode: forwards;
+}
+@keyframes navx{
+    0%{
+        transform: translateY(-150%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
